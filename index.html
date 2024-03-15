@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Kabx_Slider</title>
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+                <div>
+                    <p class="text-black font-bold text-2xl top-4 bg-gray-300 rounded-2xl px-4 ml-4 fixed font-[Anta,_sans-serif]">NxtGeN🎯</p>
+                </div>
+
+            <div class="mt-14">
+                <h1 class="text-center text-5xl font-semibold  text-gray-800 font-[Anta,sans-serif]">Unveiling the Guardians of Goodness⚡</h1>
+            </div>
+            <div class="flex mt-10">
+                <div class="w-24  my-auto" onclick="prev()">
+                    <button class="ml-5 mt-2">
+                        <svg class="h-12 w-12 " version="1.1" id="icons_1_" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128" xml:space="preserve"><style>.st0{display:none}.st1{display:inline}.st2{fill:#0a0a0a}</style><g id="row2_1_"><g id="_x31__4_"><path class="st2 " d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm1.3-82.8L41.6 64l23.6 25.5h13.5L54.4 64l24.4-25.5H65.3z" id="left_3_"/></g></g></svg>
+                    </button>
+                </div>
+                <div id="sliderContainer" class="w-full flex overflow-hidden mb-10">
+
+                    <ul id="slider" class="w-full flex rounded-2xl  transition-margin duration-700">
+                        <li class="w-[550px] h-full border rounded-2xl border-gray-900  bg-[#f4f4f4] mr-5">
+
+                            <img src="./asset/hero1.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#f4a423] font-[Anta,sans-serif] ">Robin</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#9d1e15] ">SkyWings</p>
+                            <p class="text-lg font-semibold px-5 text-center mt-2 font-[Pridi,serif]">The leader of the Teen Titans. He is determined and sometimes overly serious, with a strong desire to be seen as cool and respected</p>
+                        </li>
+                  
+                        <li class="w-[550px] h-full border rounded-2xl border-gray-900 bg-[#dfdfdf] mr-5">
+
+                            <img src="./asset/hero9.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#104a53] font-[Anta,sans-serif]">The H.I.V.E. Five:</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#6e0391]">Fire Ball</p>
+                            <p class="text-xl font-semibold px-5 text-center mt-2 font-[Pridi,serif]">A group of teenage villains consisting of Gizmo, Jinx, Mammoth, See-More, and Billy Numerous.</p>
+                        </li>
+                        <li class="w-[550px] h-full border rounded-2xl border-gray-900 bg-[#ffffff] mr-5">
+
+                            <img src="./asset/hero3.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#302a2c] font-[Anta,sans-serif]">Cyborg</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#702b2d]">Healing</p>
+                            <p class="text-xl font-semibold px-5 text-center mt-2 font-[Pridi,serif]">A half-human, half-robot with incredible strength, technologically advanced weaponry, and the ability to interface with computers.</p>
+                        </li>
+                        <li class="w-[550px] h-full  border rounded-2xl border-gray-900 bg-[#d1e9f3] mr-5">
+      mr-5
+                            <img src="./asset/hero8.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#372054] font-[Anta,sans-serif]">Slade</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#d17427]">Pirates Troops</p>
+                            <p class="text-xl font-semibold px-5 text-center mt-2 font-[Pridi,serif]">A formidable mercenary and master strategist who serves as one of the Teen Titans' primary adversaries.</p>
+                        </li>
+                        <li class="w-[550px] h-full border border-gray-900 bg-[#f5ece3] mr-5">
+                            <img src="./asset/hero4.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#5b7167] font-[Anta,sans-serif]">Beast Boy</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#97603d]">Nitro</p>
+                            <p class="text-xl font-semibold px-5 text-center mt-2 font-[Pridi,serif]">A fun-loving and mischievous shape-shifter who can transform into any animal. He provides much of the comic relief in the series.</p>
+                        </li>
+                        <li class="w-[550px] h-full border rounded-2xl border-gray-900 bg-[#ede9e6] mr-5">
+
+                            <img src="./asset/hero13.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#6d6b57] font-[Anta,sans-serif]">Freak</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#8c593e]">Vison Killer</p>
+                            <p class="text-xl font-semibold px-5 text-center font-[Pridi,serif]"> A geeky villain with the ability to manipulate reality by using remote controls</p>
+                        </li>
+                        <li class="w-[550px] h-full border rounded-2xl border-gray-900  bg-[#f5f1f0] mr-5">
+
+                            <img src="./asset/hero2.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#791808] font-[Anta,sans-serif]">Raven</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#d65e00]">Fire Ball</p>
+                            <p class="text-xl mt-2 font-semibold px-5 text-center font-[Pridi,serif]"> A dark and mysterious sorceress who possesses various magical powers, including telekinesis and the ability to create portals.</p>
+                        </li>
+                        <li class="w-[550px] h-full border rounded-2xl border-border-gray-900 bg-[#eeebe4] mr-5">
+
+                            <img src="./asset/hero5.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#a64315] font-[Anta,sans-serif]">Silkie</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#968168]">Magnetic Radiation</p>
+                            <p class="text-xl font-semibold px-5 text-center mt-2 font-[Pridi,serif]">A small, cute, and somewhat gross larva that Starfire adopts as a pet. Silkie often finds himself in various comedic situations throughout the show.</p>
+                   </li>
+<!--                        
+                        <li class="w-[550px] h-full border border-purple-400 bg-[#27282c] object-cover">
+
+                            <img src="./asset/hero11.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#f5c7a9]">Trigon</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#a69ba2]">Fire Ball</p>
+                            <p class="text-xl font-semibold px-5 text-center ">Raven's demonic father and a powerful interdimensional demon. He seeks to conquer and destroy worlds, often using Raven's powers for his own nefarious purposes.</p>
+                        </li> -->
+                        
+                        <li class="w-[550px] h-full border rounded-2xl border-gray-900 bg-[#fefefe] mr-5">
+
+                            <img src="./asset/hero10.png" class="h-[580px] w-[450px] object-cover rounded-2xl" alt="">
+                            <h1 class="text-5xl font-bold text-center text-[#525961] font-[Anta,sans-serif]">Monsieur Mallah</h1>
+                            <p class="text-md font-bold text-center mt-1 text-[#9d1e15]">Fire Ball</p>
+                            <p class="text-xl font-semibold px-5 text-center font-[Pridi,serif]">A highly intelligent gorilla and the loyal henchman of The Brain. He is skilled in combat and often accompanies The Brain in his schemes.</p>
+                        </li>
+                      
+                       
+                        </ul>
+
+
+
+                </div>
+               
+                <div class="w-24  my-auto" onclick="next()">
+                    <button class="ml-5 mt-2">
+                        <svg class="h-12 w-12 mr-5" version="1.1" id="icons_1_" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128" xml:space="preserve"><style>.st0{display:none}.st1{display:inline}.st2{fill:#0a0a0a}</style><g id="row1_1_"><g id="_x31__3_"><path class="st2 " d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm0 121.6C32.2 121.6 6.4 95.8 6.4 64S32.2 6.4 64 6.4s57.6 25.8 57.6 57.6-25.8 57.6-57.6 57.6zM49.2 38.4 73.6 64 49.2 89.6h13.5L86.4 64 62.7 38.4H49.2z" id="_x32__2_"/></g></g></svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
